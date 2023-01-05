@@ -1,0 +1,33 @@
+version: "3.3"
+
+services:
+  frontend:
+    build:
+      context: client
+    image: frontend:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+  backend:
+    build:
+      context: .
+    image: backend:latest
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mylovelymongodb
+    env_file:
+      - .env
+  mylovelymongodb:
+    # "mylovelymongodb" will be included in MongoDB URI in .env file
+    image: mongo:4.4
+    env_file:
+      - .env
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+
+volumes:
+  mongodb-data:

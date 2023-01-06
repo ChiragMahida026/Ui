@@ -47,12 +47,13 @@ export default function CreateNote() {
 <select required  value={note.title} id="title"
             name="title"  onChange={onChangeInput}>
     <option value="" disabled>--Please choose an option--</option>
-            <option value="docker">Docker</option>
-            <option value="linux">Linux</option>
-            <option value="git">Git</option>
-            <option value="Install">Install</option>
-            <option value="UnInstall">UnInstall</option>
-               <option value="Error">Error</option>
+            <option value="Problem">Problem</option>
+            <option value="Solution">Solution</option>
+            <option value="Command">Command</option>
+            <option value="Bookmark">Bookmark</option>
+            <option value="U/P">U/P</option>
+            <option value="Error">Error</option>
+            <option value="Future">Future</option>
 
           </select>
         </div>

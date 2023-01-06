@@ -82,9 +82,9 @@ export default function Home() {
     >
      
                   </div>
-          {/* <button className="delete" onClick={() => deleteNote(note._id)}>
+          <button className="delete" onClick={() => deleteNote(note._id)}>
             <DeleteIcon />
-                  </button> */}
+                  </button>
 
           <button className="copy" onClick={() => {
          navigator.clipboard.writeText(note.codes);}}>

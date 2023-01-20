@@ -10,6 +10,7 @@ export default function Nav({ setIsLogin }) {
   const logoutSubmit = () => {
     localStorage.clear();
     setIsLogin(false);
+    window.location.reload();
   };
 
   return (

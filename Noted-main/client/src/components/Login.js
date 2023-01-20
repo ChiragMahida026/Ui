@@ -79,9 +79,9 @@ export default function Login({ setIsLogin }) {
           />
 
           <button type="submit">Login</button>
-          <p>
+          {/* <p>
             <span onClick={() => setOnLogin(true)}> Register instead</span>
-          </p>
+          </p> */}
           <h3>{err}</h3>
         </form>
       </div>

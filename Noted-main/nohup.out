@@ -1,0 +1,193 @@
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at errorOrDestroy (node:internal/streams/destroy:214:7)
+    at node:internal/fs/streams:258:9
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:681:5) {
+  errno: -4083,
+  code: 'EBADF',
+  syscall: 'read'
+}
+
+Node.js v18.12.0
+
+> noted@1.0.0 dev
+> concurrently "npm run client" "npm run server"
+
+[1] 
+[1] > noted@1.0.0 server
+[1] > nodemon server.js
+[1] 
+[0] 
+[0] > noted@1.0.0 client
+[0] > cd client && npm run start
+[0] 
+[1] [33m[nodemon] 2.0.7[39m
+[1] [33m[nodemon] to restart at any time, enter `rs`[39m
+[1] [33m[nodemon] watching path(s): *.*[39m
+[1] [33m[nodemon] watching extensions: js,mjs,json[39m
+[1] [32m[nodemon] starting `node server.js`[39m
+[0] 
+[0] > client@0.1.0 start
+[0] > react-scripts start
+[0] 
+[1] (node:13896) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+[1] (Use `node --trace-warnings ...` to show where the warning was created)
+[1] Server is running on port 5000
+[1] (node:13896) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+[1] Connected to MongoDB.
+[0] (node:3536) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[0] (Use `node --trace-deprecation ...` to show where the warning was created)
+[0] (node:3536) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[0] Starting the development server...
+[0] 
+[0] Compiled with warnings.
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\format.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\format.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\index.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\index.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\en_US.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\en_US.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\zh_CN.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\zh_CN.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\realtime.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\realtime.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\register.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\register.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\date.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\date.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\dom.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\dom.ts'
+[0] 
+[0] Search for the keywords to learn more about each warning.
+[0] To ignore, add // eslint-disable-next-line to the line before.
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/format.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\format.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\format.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/index.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\index.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\index.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/lang/en_US.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\en_US.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\en_US.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/lang/zh_CN.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\zh_CN.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\zh_CN.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/realtime.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\realtime.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\realtime.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/register.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\register.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\register.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/utils/date.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\date.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\date.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/utils/dom.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\dom.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\dom.ts'[39m[22m
+[0] 
+[0] webpack compiled with [1m[33m8 warnings[39m[22m
+[1] [32m[nodemon] restarting child process[39m
+[0] ^CTerminate batch job (Y/N)? [32m[nodemon] starting `node server.js`[39m
+[1] ^Cnpm run server exited with code 3221225786
+[0] npm run client exited with code 3221225786
+
+> noted@1.0.0 dev
+> concurrently "npm run client" "npm run server"
+
+[0] 
+[0] > noted@1.0.0 client
+[0] > cd client && npm run start
+[0] 
+[1] 
+[1] > noted@1.0.0 server
+[1] > nodemon server.js
+[1] 
+[1] [33m[nodemon] 2.0.7[39m
+[1] [33m[nodemon] to restart at any time, enter `rs`[39m
+[1] [33m[nodemon] watching path(s): *.*[39m
+[1] [33m[nodemon] watching extensions: js,mjs,json[39m
+[1] [32m[nodemon] starting `node server.js`[39m
+[0] 
+[0] > client@0.1.0 start
+[0] > react-scripts start
+[0] 
+[1] (node:9348) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+[1] (Use `node --trace-warnings ...` to show where the warning was created)
+[1] Server is running on port 5000
+[1] (node:9348) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+[1] Connected to MongoDB.
+[0] (node:18116) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[0] (Use `node --trace-deprecation ...` to show where the warning was created)
+[0] (node:18116) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[0] Starting the development server...
+[0] 
+[0] Compiled with warnings.
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\format.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\format.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\index.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\index.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\en_US.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\en_US.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\zh_CN.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\zh_CN.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\realtime.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\realtime.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\register.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\register.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\date.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\date.ts'
+[0] 
+[0] Failed to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\dom.ts' file: Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\dom.ts'
+[0] 
+[0] Search for the keywords to learn more about each warning.
+[0] To ignore, add // eslint-disable-next-line to the line before.
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/format.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\format.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\format.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/index.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\index.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\index.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/lang/en_US.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\en_US.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\en_US.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/lang/zh_CN.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\zh_CN.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\lang\zh_CN.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/realtime.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\realtime.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\realtime.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/register.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\register.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\register.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/utils/date.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\date.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\date.ts'[39m[22m
+[0] 
+[0] [1m[33mWARNING[39m[22m in [1m./node_modules/timeago.js/esm/utils/dom.js[39m[22m
+[0] [1mModule Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+[0] [1m[31mFailed[39m[22m[1m to parse source map from 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\dom.ts' file: [1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\xampp\htdocs\notesway\Noted-main\client\node_modules\timeago.js\src\utils\dom.ts'[39m[22m
+[0] 
+[0] webpack compiled with [1m[33m8 warnings[39m[22m
+[1] (node:9348) DeprecationWarning: Mongoose: `findOneAndUpdate()` and `findOneAndDelete()` without the `useFindAndModify` option set to false are deprecated. See: https://mongoosejs.com/docs/deprecations.html#findandmodify
+[1] Terminate batch job (Y/N)? Terminate batch job (Y/N)? npm run client exited with code 1
+[1] npm run server exited with code 1

@@ -5,6 +5,7 @@ import axios from "axios";
 import DeleteIcon from "@material-ui/icons/Delete";
 import CopyAllIcon from "@material-ui/icons/FileCopy";
 import EditIcon from "@material-ui/icons/Edit";
+import SearchIcon from "@material-ui/icons/Search";
 
 export default function Home() {
 
@@ -18,7 +19,7 @@ export default function Home() {
       headers: { Authorization: token },
     });
     setNotes(res.data);
-    console.log(res.data);
+    // console.log(res.data);
   };
 
   useEffect(() => {
@@ -47,15 +48,17 @@ export default function Home() {
 
     
     <div className="note-wrapper">
-      <div className="md-form mt-0">
-        <input
-          className="form-control"
-          type="text"
-          placeholder="Search"
-          style={{ marginBottom: "2%" }}
-          onChange={(e) => setquery(e.target.value)}
-        />
+ 
+      <div className="container">
+        <div className="search-box">
+            <input type="text" className="search-input" placeholder="Search.." onChange={(e) => setquery(e.target.value)}/>
+
+            <button className="search-button">
+              <SearchIcon />
+              </button>
+          </div>
       </div>
+      
       {notes.filter(
                 (note) =>
           note.title.toLowerCase().includes(query) ||
@@ -82,9 +85,9 @@ export default function Home() {
     >
      
                   </div>
-          <button className="delete" onClick={() => deleteNote(note._id)}>
+          {/* <button className="delete" onClick={() => deleteNote(note._id)}>
             <DeleteIcon />
-                  </button>
+                  </button> */}
 
           <button className="copy" onClick={() => {
          navigator.clipboard.writeText(note.codes);}}>
